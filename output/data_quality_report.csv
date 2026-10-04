@@ -1,0 +1,24 @@
+check,status,count,details
+Row count,PASS,100,Loaded 100 customer records.
+Duplicate KUNNR,PASS,0,Customer Account Number must be unique.
+Missing KUNNR,PASS,0,Customer Account Number is required.
+Required source completeness: KTOKD,PASS,0,0 blank value(s) found.
+Required source completeness: KUNNR,PASS,0,0 blank value(s) found.
+Required target field source availability: BUKRS,PASS,0,Source field is not required because the specification supplies the target value.
+Required target field source availability: VKORG,PASS,0,Source field is not required because the specification supplies the target value.
+Required source completeness: LAND1,PASS,0,0 blank value(s) found.
+Required source completeness: NAME1,PASS,0,0 blank value(s) found.
+Required source completeness: ORT01,PASS,0,0 blank value(s) found.
+Required source completeness: PSTLZ,PASS,0,0 blank value(s) found.
+Required source completeness: REGIO,PASS,0,0 blank value(s) found.
+Required source completeness: SORTL,PASS,0,0 blank value(s) found.
+Required source completeness: STRAS,PASS,0,0 blank value(s) found.
+Required source completeness: ERDAT,PASS,0,0 blank value(s) found.
+Required source completeness: ERNAM,PASS,0,0 blank value(s) found.
+Required source completeness: SPRAS,PASS,0,0 blank value(s) found.
+Populated fields not flagged as LEGACY-utilized,WARN,33,"33 source columns contain data although they are not flagged 'Y' in the legacy-utilization column. Fields: TELFX, ADRNR, MCOD1, MCOD3, ANRED, AUFSD, BAHNS, BBBNR, BBSNR, BUBKZ, FAKSD, NIELS, BRAN3, UMSAT, UMJAH, JMZAH, JMJAH, KATR6, KATR10, UMSA1, DUEFL, HZUOR, CIVVE, KDKG1, KDKG2, CASSD, UPTIM, RIC, LEGALNAT, /VSO/R_PALHGT, /VSO/R_I_NO_LYR, /VSO/R_ULD_SIDE, /VSO/R_LOAD_PREF"
+Target field length checks,PASS,0,No target length violations.
+NAME1 special-character check,WARN,90,90 NAME1 value(s) contain punctuation/special characters and will be cleaned.
+SPRAS matches target rule EN,WARN,100,Specification states both systems use EN; target is set to EN.
+Vendor LIFNR unresolved business rule,WARN,42,"Vendor mapping is pending a business decision, so populated legacy values are not loaded."
+Field Used Y but not LEGACY-utilized and populated,WARN,5,"Review before production load: AUFSD, KATR6, KATR10, KDKG1, KDKG2"
